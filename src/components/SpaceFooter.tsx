@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
+import * as THREE from 'three';
 import { motion } from 'framer-motion';
+// @ts-ignore
 import * as random from 'maath/random/dist/maath-random.esm';
 
 const StarField = () => {
