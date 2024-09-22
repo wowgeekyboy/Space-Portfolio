@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     // Create a transporter
-    let transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 587,
       secure: false,
@@ -40,7 +40,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       })
 
       res.status(200).json({ message: 'Email sent successfully' })
-    } catch (error) {
+    } catch {
       res.status(500).json({ error: 'Error sending email' })
     }
   } else {

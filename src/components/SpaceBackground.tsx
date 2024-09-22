@@ -6,7 +6,7 @@ import * as THREE from 'three';
 const AnimatedStars = () => {
   const ref = useRef<THREE.Points>(null);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (ref.current) {
       ref.current.rotation.x += 0.0001;
       ref.current.rotation.y += 0.0002;

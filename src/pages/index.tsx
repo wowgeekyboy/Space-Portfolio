@@ -112,7 +112,7 @@ const Home: React.FC = () => {
           className="text-xl mb-12 max-w-2xl mx-auto"
         >
           Crafting stellar web experiences with MERN stack, Next.js, Python, and more. 
-          Let's explore the digital universe together! 🚀
+          Let&apos;s explore the digital universe together! 🚀
         </motion.p>
         <motion.div variants={itemVariants}>
           <SpaceButton onClick={() => router.push('/contact')}>

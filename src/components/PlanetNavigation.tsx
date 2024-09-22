@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { motion } from 'framer-motion';
 import * as THREE from 'three';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useTexture } from '@react-three/drei';
@@ -8,9 +7,8 @@ import { useTexture } from '@react-three/drei';
 const Planet = ({ position, texture, size, onClick }: { position: [number, number, number]; texture: string; size: number; onClick: () => void }) => {
   const planetTexture = useTexture(texture);
   const meshRef = useRef<THREE.Mesh>(null);
-  const { camera } = useThree();
 
-  useFrame((state) => {
+  useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.y += 0.005;
     }

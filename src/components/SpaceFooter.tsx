@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
-import * as random from 'maath/random/dist/maath-random.esm';
 import { motion } from 'framer-motion';
+import * as random from 'maath/random/dist/maath-random.esm';
 
 const StarField = () => {
   const ref = useRef<THREE.Points>(null);
