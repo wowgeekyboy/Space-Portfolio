@@ -7,19 +7,16 @@ const projects = [
     title: 'NextGen E-commerce Platform',
     description: 'High-performance e-commerce platform using Next.js and Redux with real-time inventory updates and AI-powered recommendations.',
     tech: ['Next.js', 'Redux', 'Node.js', 'MongoDB'],
-    year: 2024,
   },
   {
     title: 'Collaborative Task Management System',
     description: 'Real-time collaborative task management system using MERN stack, featuring live updates, chat functionality, and file sharing.',
     tech: ['MERN Stack', 'Socket.io', 'JWT'],
-    year: 2023,
   },
   {
     title: 'Smart Content Categorization Tool',
     description: 'Content categorization tool using Python and Django with basic machine learning models for text classification.',
     tech: ['Python', 'Django', 'scikit-learn', 'PostgreSQL'],
-    year: 2023,
   },
 ];
 
@@ -52,7 +49,11 @@ const Projects: React.FC = () => {
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-center mb-12 text-space-white">Projects</h1>
+      <h1 className="text-5xl font-bold text-center mb-12 text-space-white">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-600">
+          Cosmic Creations
+        </span>
+      </h1>
       <motion.div
         ref={ref}
         initial="hidden"
@@ -64,7 +65,7 @@ const Projects: React.FC = () => {
           <motion.div
             key={index}
             variants={itemVariants}
-            className="bg-space-dark bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 hover:shadow-lg transition duration-300"
+            className="bg-gradient-to-br from-space-dark to-purple-900 rounded-lg p-6 hover:shadow-lg transition duration-300 transform hover:scale-105"
           >
             <h2 className="text-2xl font-semibold mb-4 text-space-white">{project.title}</h2>
             <p className="text-space-light mb-4">{project.description}</p>
@@ -78,7 +79,6 @@ const Projects: React.FC = () => {
                 </span>
               ))}
             </div>
-            <p className="text-space-light">Year: {project.year}</p>
           </motion.div>
         ))}
       </motion.div>

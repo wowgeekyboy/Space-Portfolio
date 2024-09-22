@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Sarvesh Atalkar's Space-Themed Portfolio
 
-## Getting Started
+Welcome to my cosmic corner of the web! This portfolio showcases my journey as a Full Stack Developer.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Interactive space-themed design
+- Responsive layout for various devices
+- Dynamic content loading with smooth animations
+- Contact form with ReCAPTCHA integration
+- GitHub repository showcase
+- Experience timeline
+- Project gallery
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:**
+  - Next.js
+  - React
+  - TypeScript
+  - Framer Motion for animations
+  - Tailwind CSS for styling
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **3D Graphics:**
+  - Three.js
+  - React Three Fiber
+  - React Three Drei
 
-## Learn More
+- **Backend:**
+  - Node.js (for API routes in Next.js)
 
-To learn more about Next.js, take a look at the following resources:
+- **Other Libraries:**
+  - React Intersection Observer
+  - React Google ReCAPTCHA
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To run this project locally:
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```
+   git clone https://github.com/wowgeekyboy/Space-Portfolio.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
+   ```
+   cd your-repo-name
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Create a `.env.local` file in the root directory and add your ReCAPTCHA site key:
+   ```
+   NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your_recaptcha_site_key
+   ```
+
+5. Run the development server:
+   ```
+   npm run dev
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## 📂 Project Structure
+
+- `pages/`: Next.js pages
+- `components/`: Reusable React components
+- `styles/`: Global styles and Tailwind CSS configuration
+- `public/`: Static assets
+
+## 🌌 Key Components
+
+- `Navbar`: Navigation component with animated logo
+- `SpaceFooter`: Footer with starfield effect
+- `Comet`: Animated comet effect on the homepage
+- `SpaceButton`: Custom button component with space theme
+- `Layout`: Wrapper component for consistent layout across pages
+
+## 📄 Pages
+
+- `Home`: Landing page with introduction and cosmic animations
+- `Projects`: Showcase of key projects with descriptions and tech stack
+- `Experience`: Timeline of professional experiences
+- `GitHub`: Dynamic display of GitHub repositories
+- `Contact`: Contact form with space-themed design
+
+## 🎨 Styling
+
+This project uses Tailwind CSS for styling, with custom space-themed classes and animations. The color scheme is based on a dark space theme with accents of cosmic colors.
+
+## 🚀 Deployment
+
+This portfolio is deployed on Vercel, taking advantage of Next.js optimizations for the best performance and user experience.
+

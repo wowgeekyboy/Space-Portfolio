@@ -51,14 +51,20 @@ const Experience: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        type: 'spring',
+        damping: 12,
+        stiffness: 100,
       },
     },
   };
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-4xl font-bold text-center mb-12 text-space-white">Work Experience</h1>
+      <h1 className="text-5xl font-bold text-center mb-12 text-space-white">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-600">
+          Interstellar Journey
+        </span>
+      </h1>
       <motion.div
         ref={ref}
         initial="hidden"
@@ -70,7 +76,7 @@ const Experience: React.FC = () => {
           <motion.div
             key={index}
             variants={itemVariants}
-            className="bg-space-dark bg-opacity-50 backdrop-filter backdrop-blur-lg rounded-lg p-6 hover:shadow-lg transition duration-300"
+            className="bg-gradient-to-br from-space-dark to-purple-900 rounded-lg p-6 hover:shadow-lg transition duration-300 transform hover:scale-105"
           >
             <h2 className="text-2xl font-semibold mb-2 text-space-white">{exp.position}</h2>
             <h3 className="text-xl mb-2 text-space-light">{exp.company}</h3>

@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
+const Logo: React.FC = () => (
+  <div className="flex items-center space-x-2">
+    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="30" r="30" fill="#0B0D17"/>
+      <text x="30" y="38" fontFamily="Space Grotesk, sans-serif" fontSize="24" fill="#D0D6F9" textAnchor="middle" className="font-bold">SA🚀</text>
+    </svg>
+  </div>
+);
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,6 +18,7 @@ const Navbar: React.FC = () => {
     { name: 'Home', href: '/' },
     { name: 'Projects', href: '/projects' },
     { name: 'Experience', href: '/experience' },
+    { name: 'GitHub', href: '/github' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -18,7 +28,12 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <span className="text-space-white text-2xl font-display">🚀 Sarvesh</span>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Logo />
+              </motion.div>
             </Link>
           </div>
           <div className="hidden md:block">
@@ -27,7 +42,7 @@ const Navbar: React.FC = () => {
                 <Link key={item.name} href={item.href}>
                   <motion.span
                     className="text-space-light hover:text-space-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer"
-                    whileHover={{ scale: 1.1 }}
+                    whileHover={{ scale: 1.1, color: "#ffffff" }}
                     whileTap={{ scale: 0.95 }}
                   >
                     {item.name}
