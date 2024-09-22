@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
           </motion.div>
           <div className="flex justify-center">
             <ReCAPTCHA
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "YOUR_RECAPTCHA_SITE_KEY"}
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LcHqUsqAAAAAGCGIhHD0pszSRHJ7zJIQeIlKb3E"}
               onChange={(value) => setCaptchaValue(value)}
             />
           </div>
