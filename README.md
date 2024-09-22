@@ -1,4 +1,4 @@
-# 🚀 Sarvesh Atalkar's Space-Themed Portfolio
+# 🚀 My Space-Themed Portfolio
 
 Welcome to my cosmic corner of the web! This portfolio showcases my journey as a Full Stack Developer.
 
